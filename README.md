@@ -5,7 +5,7 @@ clova-tts performs text-to-speech using [Naver Clova Speech Synthesis API](https
 ## Installation
 
   ```
-  pip install clova-tts
+  pip install clovaTTS
   ```
 
 ## Quickstart
