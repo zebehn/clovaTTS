@@ -12,7 +12,9 @@ clova-tts performs text-to-speech using [Naver Clova Speech Synthesis API](https
   ```
   from clovaTTS import clovaTTS
   
-  tts = clovaTTS("mijin", "<client_id>", "<client_secret>")
+  # clovaTTS can save sound data in an internal cache and reuse it. cache_dir should exist.
+  # Default: use_cache=False
+  tts = clovaTTS("mijin", "<client_id>", "<client_secret>", use_cache=True, cache_dir="/home/ttscache")
 
   # Input text (in Korean)
   text = "그래요. 많은 분들이 저를 찾고 있지요."

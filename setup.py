@@ -1,8 +1,13 @@
 from setuptools import setup
 
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+
 setup(name='clovaTTS',
-      version='0.1',
+      version='0.1.2',
       description='A TTS Wrapper for Naver Clova Speech Synthesis API',
+      long_description=long_description,
+      long_description_content_type="text/markdown",
       classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'License :: OSI Approved :: MIT License',
